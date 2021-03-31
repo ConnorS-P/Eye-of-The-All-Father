@@ -15,7 +15,7 @@ repositories {
     // Use jcenter for resolving dependencies.
     // You can declare any Maven/Ivy/file repository here.
     jcenter()
-    
+
     //For Discord4J
     mavenCentral()
 }
@@ -29,10 +29,14 @@ dependencies {
 
     // Use JUnit test framework
     testImplementation 'junit:junit:4.12'
-    
+
     //Discord API
     implementation 'com.discord4j:discord4j-core:3.2.0-M2'
-    
+
     //Logging
     implementation 'ch.qos.logback:logback-classic:1.2.3'
+
+	// https://mvnrepository.com/artifact/net.sourceforge.tess4j/tess4j
+	implementation group: 'net.sourceforge.tess4j', name: 'tess4j', version: '4.2.1'
+
 }
